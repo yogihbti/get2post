@@ -13,7 +13,7 @@ function findGetParameter(parameterName) {
     return result;
 }
 
-function red(){
+function redirectWithPost(){
 
 document.getElementById("dwbno").value = findGetParameter("dwbno");
 document.getElementById("frmTrack").submit();
@@ -22,7 +22,7 @@ document.getElementById("frmTrack").submit();
 
 </script>
 </head>
-<body onload="red()">
+<body onload="redirectWithPost()">
 <form id="frmTrack" name="frmTrack" action="http://www.tciexpress.in/trackingdocket.asp" method="post">
 
 <input id="dwbno" type="text" name="dwbno" value="CheckValue" size="31">
